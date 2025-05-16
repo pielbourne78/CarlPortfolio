@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>My Portfolio</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</head>
+
+
+
+        <div class="bg"></div>
+        <div class="bg2"></div>
+        <div class="bg3"></div>
+        <div class="content">
+        <header>
+            <div id="main">
+        <button class="openbtn" onclick="openNav()"><i class="fa-solid fa-bars"></i> Menu</button>
+            <h1 style="font-family: 'Times New Roman', Times, serif;">
+                <i class="fa-solid fa-user"></i> Carl Villafranca
+            </h1>
+            <p><i class="fa-solid fa-code"></i> Web Developer | <i class="fa-solid fa-paint-brush"></i> Designer | <i class="fa-solid fa-lightbulb"></i> Problem Solver</p>
+        </header>
+        <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
+  <a href="#main"><i class="fa-solid fa-house"></i> Home</a>
+  <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+  <a href="#skills"><i class="fa-solid fa-gears"></i> Skills</a>
+  <a href="#services"><i class="fa-solid fa-briefcase"></i> Services</a>
+  <a href="#portfolio"><i class="fa-solid fa-images"></i> Portfolio</a>
+</div>
+   
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Menu</button>
+  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+    <div class="parallax">
+            <div class="card">
+                <h1 style="font-family: 'Times New Roman', Times, serif;">
+                    <i class="fa-solid fa-hand-wave"></i> Welcome to My Portfolio
+                </h1>
+                <div class="card-content"> 
+                    <div class="text-container">
+                        <span class="animated-text">
+                            Hello, I'm Carl Villafranca<br>
+                            Welcome to my Portfolio<br>
+                            I am a Web Developer<br>
+                            and I love coding!<br>
+                            I create beautiful and functional websites<br>
+                            that provide great user experiences.
+                        </span>
+                    </div>
+                    <img src="carl.jpg" alt="Img" class="img">
+                </div>
+             </div>
+
+        
+            <div class="about">
+            <div class="profile-container">
+                <div class="img-border"><img src="pfp.jpg" alt="Profile Photo" class="profile-photo"></div>
+            </div>
+            <h2><i class="fa-solid fa-address-card"></i> About Me</h2>
+            <p><i class="fa-solid fa-user-pen"></i> Hello, I'm a passionate web developer with experience in creating dynamic and responsive websites. I specialize in front-end development and love bringing ideas to life with code.</p>
+        </div>
+        </div>
+            <!---skills-->
+                    
+        <div id="skills">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-2">
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('skills')"><i class="fa-solid fa-gears"></i> Skills</p>
+                            <p class="tab-links" onclick="openTab('experience')"><i class="fa-solid fa-briefcase"></i> Experience</p>
+                            <p class="tab-links" onclick="openTab('education')"><i class="fa-solid fa-graduation-cap"></i> Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills-tab">
+                            <ul>
+                                <li>
+                                    <span><i class="fa-solid fa-comments"></i> Soft Skills</span><br>
+                                    <i class="fa-solid fa-comment-dots"></i> Communication,
+                                    <i class="fa-solid fa-lightbulb"></i> Creativity,
+                                    <i class="fa-solid fa-clock"></i> Time Management,
+                                    <i class="fa-solid fa-microchip"></i> Technology,
+                                    <i class="fa-solid fa-palette"></i> Color Theory,
+                                    <i class="fa-solid fa-puzzle-piece"></i> Problem Solving,
+                                    <i class="fa-solid fa-list-check"></i> Planning and Organization,
+                                    <i class="fa-solid fa-people-group"></i> Collaboration Skills,
+                                    <i class="fa-solid fa-magnifying-glass"></i> Research,
+                                    <i class="fa-solid fa-face-grin-stars"></i> Taking Criticism
+                                </li>
+                                <li>
+                                    <span><i class="fa-solid fa-laptop-code"></i> Hard Skills</span><br>
+                                    <ul class="list-group list-group-horizontal flex-wrap justify-content-center hard-skills-list">
+                                        <li class="list-group-item flex-fill text-center" data-tooltip="Markup language for structuring web content.">
+                                            <i class="fa-brands fa-html5 me-1 text-danger"></i>HTML5
+                                        </li>
+                                        <li class="list-group-item flex-fill text-center" data-tooltip="Stylesheet language for designing web pages.">
+                                            <i class="fa-brands fa-css3-alt me-1 text-primary"></i>CSS3
+                                        </li>
+                                        <li class="list-group-item flex-fill text-center" data-tooltip="Programming language for web interactivity.">
+                                            <i class="fa-brands fa-js me-1 text-warning"></i>JavaScript
+                                        </li>
+                                        <li class="list-group-item flex-fill text-center" data-tooltip="JavaScript library for building UIs.">
+                                            <i class="fa-brands fa-react me-1 text-info"></i>React
+                                        </li>
+                                        <li class="list-group-item flex-fill text-center" data-tooltip="JavaScript runtime for server-side apps.">
+                                            <i class="fa-brands fa-node-js me-1 text-success"></i>Node.js
+                                        </li>
+                                        <li class="list-group-item flex-fill text-center" data-tooltip="Version control system for code.">
+                                            <i class="fa-brands fa-git-alt me-1 text-danger"></i>Git
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><span><i class="fa-solid fa-phone"></i> App Development</span><br>Building Android/iOS apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience-tab">
+                            <ul>
+                                <li><span><i class="fa-solid fa-calendar-days"></i> 2024 - Current</span><br>Layout Ads Creator</li>
+                                <li><span><i class="fa-solid fa-hand-back-fist"></i> 2024 -2025 </span><br>Professional Boxer 
+                                <li><span><i class="fa-solid fa-wrench"></i> 2024 - </span><br>NC1 graduate at Tesda Navotas(welder)</li>
+                                <li><span><i class="fa-solid fa-screwdriver-wrench"></i> 2023 -2024 </span><br>Mechanic Helper</li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education-tab">
+                            <ul>
+                                <li><span><i class="fa-solid fa-school"></i> 2021-2023</span><br>STEM Student at La Consolacion Caloocan</li>
+                                <li><span><i class="fa-solid fa-graduation-cap"></i> 2013-2020</span><br> Graduated at Kasarinlan Highschool</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function openTab(tabName) {
+                const tabContents = document.querySelectorAll('.tab-contents');
+                const tabLinks = document.querySelectorAll('.tab-links');
+
+                tabContents.forEach(content => {
+                    content.classList.remove('active-tab');
+                });
+
+                tabLinks.forEach(link => {
+                    link.classList.remove('active-link');
+                });
+
+                document.getElementById(`${tabName}-tab`).classList.add('active-tab');
+                document.querySelector(`.tab-links[onclick="openTab('${tabName}')"]`).classList.add('active-link');
+            }
+        </script>
+                <!--services-->
+    </section>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"><i class="fa-solid fa-briefcase"></i> My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-pen-to-square" aria-hidden="true" style="font-size: 2rem; color: #ffffff;"></i>
+                    <h2>Editing</h2>
+                    <p>When you write a book, you spend day after day scanning and identifying the trees. 
+                        When you’re done, you have to step back and look at the forest.</p>
+                    <p>Editing is not just about correcting mistakes, but about refining your message and ensuring clarity for your audience.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i> Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios" aria-hidden="true" style="font-size: 2rem; color: #ffffff;"></i>
+                    <h2> App Designer</h2>
+                    <p>As a designer, it’s important to think beyond apps and websites. Even if you’re working primarily in the digital space, 
+                    remember that you’re literally surrounded by design. From architecture to fashion, right down to the simplest everyday objects like a hairbrush or toothbrush, 
+                    virtually everything has been designed for human use. Design really is everywhere, so take inspiration from your surroundings</p>
+                    <p>Great app design balances aesthetics and usability, creating experiences that are both beautiful and intuitive for users.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i> Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-globe" aria-hidden="true" style="font-size: 2rem; color: #ffffff;"></i>
+                    <h2> Web Developer</h2>
+                    <p>Good code is its own best documentation. As you're about to add a comment,
+                     ask yourself, "How can I improve the code so that this comment isn't needed?" Improve the code and then document it to make it even clearer.</p>
+                    <p>As a web developer, I strive to build responsive, accessible, and high-performing websites that deliver value to users and clients alike.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i> Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"><i class="fa-solid fa-images"></i> My Portfolio</h1>
+        <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="cc.gif" class="d-block w-100" alt="Layout Design">
+                    <div class="carousel-caption">
+                        <h3><i class="fa-solid fa-layer-group"></i> Layout Design</h3>
+                        <p>We Develop the Visual Identity of Your Business.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="ww.gif" class="d-block w-100" alt="Web Design">
+                    <div class="carousel-caption">
+                        <h3><i class="fa-solid fa-desktop"></i> Web Design</h3>
+                        <p>A strategic approach to website design and development.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="vv.gif" class="d-block w-100" alt="System Developer">
+                    <div class="carousel-caption">
+                        <h3><i class="fa-solid fa-cogs"></i> System Developer</h3>
+                        <p>Discover the Impressive World of Dynamic App Development.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+   
+    </section>
+
+    <section id="resume">
+    <div class="container">
+        <h1 class="sub-title"><i class="fa-solid fa-file-lines"></i> Resume</h1>
+        <p><i class="fa-solid fa-download"></i> Click the button below to download a copy of my resume and learn more about my professional experience, education, and skills.</p>
+        <a href="Copy of Carl Villafranca-Resume and Cover Letter.pdf" class="btn" download target="_blank">
+            <i class="fa-solid fa-download" aria-hidden="true" style="margin-right: 8px;"></i>Download Resume
+        </a>
+    </div>
+</section>
+
+    <section id="contact">
+        <h2><i class="fa-solid fa-envelope"></i> Contact</h2>
+        <div class="contact-info">
+            <p><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:carlvillafranca5@gmail.com">carlvillafranca5@gmail.com</a></p>
+            <p><i class="fa-solid fa-phone"></i> Phone: +09942758072</p>
+            <p><i class="fa-brands fa-facebook"></i> Facebook: <a href="https://www.facebook.com/carl.angielo" target="_blank">facebook.com/yourprofile</a></p>
+            <p><i class="fa-brands fa-github"></i> GitHub: <a href="https://github.com/CarlVillafranca" target="_blank">github.com/piel.bourne75</a></p>
+        </div>
+    </section>
+
+    <footer>
+    <p>&copy; 2025 <i class="fa-solid fa-user"></i> Your Name. All rights reserved.</p>
+    </footer>
+</div>
+</div>
+
+</body>
+</html>
